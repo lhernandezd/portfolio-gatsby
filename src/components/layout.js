@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import useTheme from "../hooks/useTheme"
 import "../scss/layout.scss"
 
 const Layout = ({ children }) => {
@@ -22,10 +23,14 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  const { theme, toggleTheme } = useTheme()
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div className={`app ${theme}`}>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        toogle={toggleTheme}
+        theme={theme}
+      />
       <div
         style={{
           margin: `0 auto`,
@@ -41,7 +46,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,8 +1,48 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
-
+@import "utils";
 body {
   font: 100% $font-stack;
-  color: $primary-color;
   margin: 0;
+}
+
+.app.dark {
+  background: $bg-black;
+  color: $secondary-color;
+  transition: 0.3s all;
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.app.light {
+  background: $bg-white;
+  color: $primary-color;
+  transition: 0.3s all;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+/* Header */
+.header {
+  margin-bottom: 1.45rem;
+  .header__content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.875em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content__links {
+      font-size: 16px;
+      .link {
+        padding: 0 30px;
+        font-weight: 300;
+      }
+      .link.link--last {
+        padding-right: 0;
+      }
+    }
+  }
 }
