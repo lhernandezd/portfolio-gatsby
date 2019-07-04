@@ -4,6 +4,12 @@ body {
   margin: 0;
 }
 
+/* Main css */
+.icon {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
 .app.dark {
   background: $bg-black;
   color: $secondary-color;
@@ -11,6 +17,12 @@ body {
   a {
     color: $secondary-color;
     text-decoration: none;
+  }
+  #gradient {
+    @include gradient-text(
+      "linear-gradient(to right,#23966c, #faaa54, #e23b4a, #db0768, #360670)",
+      "dark"
+    );
   }
 }
 
@@ -22,6 +34,12 @@ body {
     color: $primary-color;
     text-decoration: none;
   }
+  #gradient {
+    @include gradient-text(
+      "linear-gradient(to right,#23966c, #faaa54, #e23b4a, #db0768, #360670)",
+      "light"
+    );
+  }
 }
 
 /* Header */
@@ -30,7 +48,7 @@ body {
   .header__content {
     max-width: 960px;
     margin: 0 auto;
-    padding: 1.875em 0;
+    padding: 1.875em 1.0875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +61,43 @@ body {
       .link.link--last {
         padding-right: 0;
       }
+    }
+  }
+}
+
+/* Main title in Home */
+%text {
+  position: relative;
+  width: 100%;
+  will-change: transform, opacity;
+  overflow: hidden;
+  text-align: center;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  .main__container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container__text {
+      @extend %text;
+      font-size: 80px;
+      font-weight: 600;
+      height: 80px;
+      line-height: 80px;
+    }
+    .container__subtext {
+      @extend %text;
+      font-size: 30px;
+      font-weight: 300;
+      height: 60px;
+      line-height: 60px;
     }
   }
 }

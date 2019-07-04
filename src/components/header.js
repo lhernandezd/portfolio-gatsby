@@ -18,7 +18,7 @@ const Header = ({ siteTitle, ...props }) => {
           <Link className="link" to="/projects">
             Contact
           </Link>
-          <span className="link link--last" onClick={props.toogle}>
+          <span className="link link--last icon" onClick={props.toogle}>
             {props.theme === "light" ? <FaRegMoon /> : <FaRegSun />}
           </span>
         </div>
