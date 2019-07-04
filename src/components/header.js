@@ -12,10 +12,13 @@ const Header = ({ siteTitle, ...props }) => {
           <Link to="/">{siteTitle}</Link>
         </h1>
         <div className="content__links">
-          <Link className="link" to="/projects">
+          <Link className="link" to="/page-2/">
+            About
+          </Link>
+          <Link className="link" to="/projects/">
             Projects
           </Link>
-          <Link className="link" to="/projects">
+          <Link className="link" to="/contact/">
             Contact
           </Link>
           <span className="link link--last icon" onClick={props.toogle}>

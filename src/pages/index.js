@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import { useTrail, animated } from "react-spring"
 
 import Layout from "../components/layout"
@@ -41,13 +40,65 @@ const IndexPage = () => {
             </animated.div>
           ))}
         </div>
+        <div className="main__skills">
+          <div className="skills__skill size-3">
+            <span>git</span>
+          </div>
+          <div className="skills__skill">
+            <span>HTML</span>
+          </div>
+          <div className="skills__skill size-2">
+            <span>SASS</span>
+          </div>
+          <div className="skills__skill size-2">
+            <span>Javascript</span>
+          </div>
+          <div className="skills__skill size-3">
+            <span>React.js</span>
+          </div>
+          <div className="skills__skill size-3">
+            <span>Gatsby</span>
+          </div>
+          <div className="skills__skill">
+            <span>Node.JS</span>
+          </div>
+          <div className="skills__skill size-2">
+            <span>Python</span>
+          </div>
+          <div className="skills__skill">
+            <span>Ruby On Rails</span>
+          </div>
+          <div className="skills__skill size-3">
+            <span>Material UI</span>
+          </div>
+          <div className="skills__skill size-2">
+            <span>Adobe XD</span>
+          </div>
+          <div className="skills__skill size-3">
+            <span>mongoDB</span>
+          </div>
+          <div className="skills__skill">
+            <span>Redux</span>
+          </div>
+          <div className="skills__skill size-2">
+            <span>postgre</span>
+          </div>
+          <div className="skills__skill">
+            <span>jQuery</span>
+          </div>
+          <div className="skills__skill size-3">
+            <span>Express.js</span>
+          </div>
+          <div className="skills__skill size-2">
+            <span>Firebase</span>
+          </div>
+        </div>
       </div>
       <div
         style={{ display: "none", maxWidth: `300px`, marginBottom: `1.45rem` }}
       >
         <Image />
       </div>
-      <Link to="/page-2/">Go to page 2</Link>
     </Layout>
   )
 }
