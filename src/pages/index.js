@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { useTrail, animated } from "react-spring"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const items = [
@@ -10,7 +9,7 @@ const items = [
   "Frontend (mostly) developer, specialize in fast prototypes",
   "for the web.",
 ]
-const config = { mass: 8, tension: 1000, friction: 250 }
+const config = { mass: 5, tension: 1000, friction: 250 }
 
 const IndexPage = () => {
   const [toggle] = useState(true)
@@ -24,8 +23,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="main">
-        <div className="main__container">
+      <section className="home">
+        <div className="home__container">
           {trail.map(({ x, height, ...rest }, index) => (
             <animated.div
               key={items[index]}
@@ -40,7 +39,7 @@ const IndexPage = () => {
             </animated.div>
           ))}
         </div>
-        <div className="main__skills">
+        <div className="home__skills">
           <div className="skills__skill size-3">
             <span>git</span>
           </div>
@@ -93,12 +92,7 @@ const IndexPage = () => {
             <span>Firebase</span>
           </div>
         </div>
-      </div>
-      <div
-        style={{ display: "none", maxWidth: `300px`, marginBottom: `1.45rem` }}
-      >
-        <Image />
-      </div>
+      </section>
     </Layout>
   )
 }

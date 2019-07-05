@@ -32,20 +32,42 @@ const Layout = ({ children }) => {
         theme={theme}
       />
       <div
+        id="content"
+        className="container"
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <footer>
+        <div className="footer__info">
+          <div className="container footer__info-container">
+            © {new Date().getFullYear()} - Web app designed and coded by
+            {` `}
+            <a
+              id="gradient"
+              target="_blank"
+              href="https://github.com/lhernandezd"
+              rel="noopener noreferrer"
+            >
+              <span>Luis Hernández</span>
+            </a>
+            {` `}
+            using
+            {` `}
+            <a
+              id="gradient"
+              target="_blank"
+              href="https://www.gatsbyjs.org"
+              rel="noopener noreferrer"
+            >
+              Gatsby.
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
