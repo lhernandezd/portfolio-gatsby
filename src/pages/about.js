@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaGithub, FaLinkedinIn, FaTwitter, FaFilePdf } from "react-icons/fa"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -39,58 +38,11 @@ const About = () => {
               world of Web Development and who is constantly looking for ways to
               develop himself personally and professionally.
             </p>
-            <div className="info__links">
-              <div className="links__link">
-                <a
-                  target="_blank"
-                  href="https://github.com/lhernandezd"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub className="link-circular" />
-                  {` `}
-                  lhernandezd
-                </a>
-              </div>
-              <div className="links__link">
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/lhernandezd95/"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn className="link-square" />
-                  {` `}
-                  lhernandezd95
-                </a>
-              </div>
-              <div className="links__link">
-                <a
-                  target="_blank"
-                  href="https://twitter.com/ldhdv1195"
-                  rel="noopener noreferrer"
-                >
-                  <FaTwitter className="link-square" />
-                  {` `}
-                  @ldhdv1195
-                </a>
-              </div>
-              <div className="links__link">
-                <a
-                  target="_blank"
-                  href="https://twitter.com/ldhdv1195"
-                  rel="noopener noreferrer"
-                >
-                  <FaFilePdf className="link-square" />
-                  {` `}
-                  Resume
-                </a>
-              </div>
-            </div>
           </div>
           <div
             className="col-6"
             style={{
               maxWidth: `500px`,
-              margin: "auto 0",
             }}
           >
             <Img

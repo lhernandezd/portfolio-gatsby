@@ -6,9 +6,11 @@ export default () => {
   const toggleTheme = () => {
     if (theme !== "dark") {
       localStorage.setItem("theme", "dark")
+      document.documentElement.style.backgroundColor = "#000"
       setTheme("dark")
     } else {
       localStorage.setItem("theme", "light")
+      document.documentElement.style.backgroundColor = "#fff"
       setTheme("light")
     }
   }
@@ -16,6 +18,9 @@ export default () => {
   useEffect(() => {
     const localTheme = localStorage.getItem("theme")
     if (localTheme) {
+      localTheme === "light"
+        ? (document.documentElement.style.backgroundColor = "#fff")
+        : (document.documentElement.style.backgroundColor = "#000")
       setTheme(localTheme)
     }
   }, [theme])

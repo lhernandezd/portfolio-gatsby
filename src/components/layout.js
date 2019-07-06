@@ -35,11 +35,12 @@ const Layout = ({ children }) => {
         id="content"
         className="container"
         style={{
-          padding: `0px 1.0875rem 1.45rem`,
+          padding: `0px 1.0875rem`,
           paddingTop: 0,
+          //paddingBottom: "1.45rem"
         }}
       >
-        <main>{children}</main>
+        <main style={{ minHeight: "78vh" }}>{children}</main>
       </div>
       <footer>
         <div className="footer__info">
