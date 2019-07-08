@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap");
-
-$font-stack: "Source Sans Pro", sans-serif;
-$primary-color: #333;
+$primary-color: #000;
 $secondary-color: #fff;
 $bg-black: #000;
 $bg-white: #fff;
@@ -26,16 +23,16 @@ $underline-color: #db0768;
     }
 
     @if ($bg == "light") {
-      color: #000;
-      background: #fff;
+      color: $primary-color;
+      background: $bg-white;
       mix-blend-mode: multiply;
 
       &::before {
         mix-blend-mode: screen;
       }
     } @else {
-      color: #fff;
-      background: #000;
+      color: $secondary-color;
+      background: $bg-black;
       mix-blend-mode: lighten;
 
       &::before {

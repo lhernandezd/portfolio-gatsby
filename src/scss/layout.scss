@@ -1,4 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap");
 @import "utils";
+@import "home";
+@import "about";
+@import "contact";
+@import "projects";
+
+$font-stack: "Source Sans Pro", sans-serif;
+
 html {
   box-sizing: border-box;
   transition: background-color 0.3s;
@@ -8,7 +16,7 @@ html {
   }
 }
 
-/* Main css */
+/* Layout */
 .container {
   max-width: 960px;
   padding-top: 1.0875rem;
@@ -66,22 +74,6 @@ html {
   }
 }
 
-%section-container {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-%low-dash {
-  content: "";
-  display: block;
-  height: 1px;
-  bottom: 0.4px;
-  background-color: $underline-color;
-  transition-property: width;
-  transition-duration: 0.4s;
-}
-
 /* Header */
 .header {
   margin-bottom: 1.45rem;
@@ -103,161 +95,21 @@ html {
   }
 }
 
-/* HOME: Main title */
-%text {
-  position: relative;
-  width: 100%;
-  will-change: transform, opacity;
-  overflow: hidden;
-  text-align: center;
+/* Main content */
+%section-container {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
-.home {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  cursor: pointer;
-  .home__container {
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .container__text {
-      @extend %text;
-      font-size: 80px;
-      font-weight: 600;
-      height: 80px;
-      line-height: 80px;
-    }
-    .container__subtext {
-      @extend %text;
-      font-size: 30px;
-      font-weight: 300;
-      height: 60px;
-      line-height: 60px;
-    }
-  }
-}
-
-/* HOME: technologies */
-.home__skills {
-  margin: 0 -20px;
-  text-align: center;
-  .skills__skill {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300;
-    margin: 0 10px 15px 10px;
-    padding: 8px 20px;
-  }
-  .size-2 {
-    font-size: 20px;
-  }
-  .size-3 {
-    font-size: 25px;
-  }
-}
-
-/* ABOUT */
-.about__container {
-  @extend %section-container;
-  height: 450px;
-  .container__info {
-    header {
-      margin-bottom: 1.8em;
-      h2 {
-        margin: 0;
-        font-weight: 300;
-      }
-      &::after {
-        @extend %low-dash;
-        width: 60px;
-      }
-    }
-    p {
-      font-weight: 300;
-      margin: 0 0 1.8em;
-    }
-  }
-}
-
-/* CONTACT */
-.info__links {
-  height: 400px;
-  .links__link {
-    text-align: center;
-    margin: 10px;
-    a {
-      font-size: 16px;
-      font-weight: 300;
-      transition: color 0.3s;
-      &:hover {
-        color: $underline-color;
-      }
-      svg {
-        display: block;
-        margin: 0 auto 5px;
-      }
-      .link-circular {
-        font-size: 28px;
-      }
-      .link-square {
-        font-size: 25px;
-      }
-    }
-  }
-}
-
-/* PROJECTS */
-.projects__container {
-  @extend %section-container;
-  header {
-    margin-bottom: 1.8em;
-    h2 {
-      margin: 0;
-      font-weight: 300;
-    }
-    &::after {
-      @extend %low-dash;
-      width: 80px;
-    }
-  }
-  .projects__cards {
-    grid-gap: 1em 1em;
-    .cards__card {
-      border-radius: 4px;
-      box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
-      position: relative;
-      .card__placeholder {
-        h3,
-        p {
-          font-weight: 300;
-        }
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: all 0.3s;
-        &:hover {
-          background: linear-gradient(
-            rgba(255, 255, 255, 0) 0%,
-            rgba(0, 0, 0, 0.5) 80%
-          );
-          opacity: 1;
-        }
-        .card__info {
-          position: absolute;
-          color: $secondary-color;
-          padding: 0 20px;
-          bottom: 0;
-        }
-      }
-    }
-  }
+%low-dash {
+  content: "";
+  display: block;
+  height: 1px;
+  bottom: 0.4px;
+  background-color: $underline-color;
+  transition-property: width;
+  transition-duration: 0.4s;
 }
 
 /* Footer */

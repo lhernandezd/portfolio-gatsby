@@ -1,0 +1,21 @@
+.about__container {
+  @extend %section-container;
+  height: 450px;
+  .container__info {
+    header {
+      margin-bottom: 1.8em;
+      h2 {
+        margin: 0;
+        font-weight: 300;
+      }
+      &::after {
+        @extend %low-dash;
+        width: 60px;
+      }
+    }
+    p {
+      font-weight: 300;
+      margin: 0 0 1.8em;
+    }
+  }
+}
