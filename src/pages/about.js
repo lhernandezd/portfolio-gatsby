@@ -47,7 +47,7 @@ const About = () => {
           >
             <Img
               fluid={data.profileImage.childImageSharp.fluid}
-              style={{ borderRadius: 4 }}
+              style={{ borderRadius: 2 }}
               alt="Profile picture"
             />
           </div>
