@@ -54,6 +54,7 @@ const Projects = () => {
               target="_blank"
               href="https://github.com/lhernandezd"
               rel="noopener noreferrer"
+              style={{ color: "#db0768", fontWeight: 500 }}
             >
               github.
             </a>
@@ -65,7 +66,13 @@ const Projects = () => {
                 style={{ borderRadius: 2 }}
                 alt="Profile picture"
               />
-              <div className="card__placeholder" style={{ borderRadius: 2 }}>
+              <a
+                target="_blank"
+                href="https://www.elasustentable.com/"
+                rel="noopener noreferrer"
+                className="card__placeholder"
+                style={{ display: "block", borderRadius: 2 }}
+              >
                 <div className="card__info">
                   <h3>Ela Sustentable</h3>
                   <p>
@@ -73,7 +80,7 @@ const Projects = () => {
                     management of the company.
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="col-6 cards__card">
               <Img
@@ -81,7 +88,13 @@ const Projects = () => {
                 style={{ borderRadius: 2 }}
                 alt="Profile picture"
               />
-              <div className="card__placeholder" style={{ borderRadius: 2 }}>
+              <a
+                target="_blank"
+                href="https://lhernandezd.github.io/"
+                rel="noopener noreferrer"
+                className="card__placeholder"
+                style={{ display: "block", borderRadius: 2 }}
+              >
                 <div className="card__info">
                   <h3>Portfolio v2</h3>
                   <p>
@@ -89,7 +102,7 @@ const Projects = () => {
                     information and some projects.
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="col-6 cards__card">
               <Img
@@ -97,7 +110,13 @@ const Projects = () => {
                 style={{ borderRadius: 2 }}
                 alt="Profile picture"
               />
-              <div className="card__placeholder" style={{ borderRadius: 2 }}>
+              <a
+                target="_blank"
+                href="https://lhernandezd-todo.herokuapp.com/"
+                rel="noopener noreferrer"
+                className="card__placeholder"
+                style={{ borderRadius: 2 }}
+              >
                 <div className="card__info">
                   <h3>Todo Stack MERN</h3>
                   <p>
@@ -106,7 +125,7 @@ const Projects = () => {
                     frecuent objectives.
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="col-6 cards__card">
               <Img
@@ -114,12 +133,18 @@ const Projects = () => {
                 style={{ borderRadius: 2 }}
                 alt="Profile picture"
               />
-              <div className="card__placeholder" style={{ borderRadius: 2 }}>
+              <a
+                target="_blank"
+                href="https://github.com/lhernandezd/makeitgram"
+                rel="noopener noreferrer"
+                className="card__placeholder"
+                style={{ display: "block", borderRadius: 2 }}
+              >
                 <div className="card__info">
                   <h3>Makeitgram</h3>
                   <p>Instagram clone made with RoR (Ruby on Rails)</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
