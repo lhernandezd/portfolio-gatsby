@@ -4,6 +4,7 @@
 @import "about";
 @import "contact";
 @import "projects";
+@import "responsive";
 
 $font-stack: "Source Sans Pro", sans-serif;
 
@@ -24,6 +25,13 @@ html {
   margin: 0 auto;
 }
 
+.main {
+  min-height: 630px;
+  @include md {
+    min-height: 540px;
+  }
+}
+
 .icon {
   vertical-align: middle;
   cursor: pointer;
@@ -31,9 +39,12 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-columns: repeat(6, [col-start] 1fr);
   grid-gap: 0 2.25em;
   align-items: center;
+  @include md {
+    grid-template-columns: repeat(12, [col-start] 1fr);
+  }
   .col-6 {
     grid-column: 6 span;
   }
