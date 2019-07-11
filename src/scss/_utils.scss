@@ -1,7 +1,9 @@
 $primary-color: #000;
 $secondary-color: #fff;
 $bg-black: #000;
+$bg-black-2: rgba(0, 0, 0, 0.8);
 $bg-white: #fff;
+$bg-white-2: rgba(255, 255, 255, 0.8);
 $underline-color: #db0768;
 
 @mixin gradient-text($gradient, $bg: "light") {

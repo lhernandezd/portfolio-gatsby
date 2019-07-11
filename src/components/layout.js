@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
     <div className={`app ${theme}`}>
       <Header
         siteTitle={data.site.siteMetadata.title}
-        toogle={toggleTheme}
+        toggle={toggleTheme}
         theme={theme}
       />
       <div

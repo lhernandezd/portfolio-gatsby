@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap");
 @import "utils";
+@import "responsive";
 @import "home";
 @import "about";
 @import "contact";
 @import "projects";
-@import "responsive";
 
 $font-stack: "Source Sans Pro", sans-serif;
 
@@ -23,6 +23,10 @@ html {
   padding-top: 1.0875rem;
   padding-bottom: 1.0875rem;
   margin: 0 auto;
+}
+
+.display-none {
+  display: none;
 }
 
 .main {
@@ -67,6 +71,9 @@ html {
       "dark"
     );
   }
+  #drawer {
+    background-color: $bg-black-2;
+  }
 }
 
 .app.light {
@@ -83,6 +90,9 @@ html {
       "light"
     );
   }
+  #drawer {
+    background-color: $bg-white-2;
+  }
 }
 
 /* Header */
@@ -95,12 +105,52 @@ html {
     align-items: center;
     .content__links {
       font-size: 16px;
+      display: none;
       .link {
         padding: 0 30px;
         font-weight: 300;
       }
       .link.link-last {
         padding-right: 0;
+      }
+      @include sm {
+        display: block;
+      }
+    }
+    .content__icon {
+      font-size: 28px;
+      display: flex;
+      @include sm {
+        display: none;
+      }
+    }
+  }
+  .header__drawer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    font-weight: 300;
+    display: block;
+    @include sm {
+      display: none;
+    }
+    .drawer__links {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      font-size: 25px;
+      align-items: center;
+      width: 100%;
+      .link {
+        padding: 50px 0;
+      }
+      .link.link-last {
+        display: flex;
+        svg {
+          padding: 0 10px;
+        }
       }
     }
   }
