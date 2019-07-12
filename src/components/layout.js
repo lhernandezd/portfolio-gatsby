@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import useTheme from "../hooks/useTheme"
+import { useSpring, animated } from "react-spring"
 import "../scss/layout.scss"
 
 const Layout = ({ children }) => {
@@ -24,6 +25,10 @@ const Layout = ({ children }) => {
     }
   `)
   const { theme, toggleTheme } = useTheme()
+  const props = useSpring({
+    to: [{ opacity: 1 }],
+    from: { opacity: 0 },
+  })
   return (
     <div className={`app ${theme}`}>
       <Header
@@ -39,7 +44,9 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main className="main">{children}</main>
+        <main className="main">
+          <animated.div style={props}>{children}</animated.div>
+        </main>
       </div>
       <footer>
         <div className="footer__info">
