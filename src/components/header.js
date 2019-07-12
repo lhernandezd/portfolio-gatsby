@@ -12,7 +12,7 @@ const Header = ({ siteTitle, ...props }) => {
   const { o, h, m } = useSpring({
     o: open ? 1 : 0,
     h: open ? 100 : 0,
-    m: open ? 0 : 100,
+    m: open ? 0 : 20,
   })
   return (
     <header className="header">
@@ -38,14 +38,13 @@ const Header = ({ siteTitle, ...props }) => {
           {!open ? <IoIosMenu /> : <IoIosClose />}
         </span>
       </nav>
-      <nav className="header__drawer" style={{ zIndex: open ? 1 : 0 }}>
+      <nav className="header__drawer" style={{ zIndex: open ? 1 : -1 }}>
         <animated.div
           id="drawer"
           style={{
             opacity: o,
             height: h.interpolate(h => `${h}%`),
-            width: h.interpolate(h => `${h}%`),
-            marginLeft: m.interpolate(m => `-${m}px`),
+            marginTop: m.interpolate(m => `-${m}px`),
           }}
         >
           <Drawer toggle={props.toggle} />
