@@ -80,7 +80,7 @@ const IndexPage = () => {
             <span>Redux</span>
           </div>
           <div className="skills__skill size-2">
-            <span>postgre</span>
+            <span>postgreSQL</span>
           </div>
           <div className="skills__skill">
             <span>jQuery</span>

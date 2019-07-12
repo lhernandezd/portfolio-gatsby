@@ -47,8 +47,8 @@ const Projects = () => {
             <h2>Projects</h2>
           </header>
           <div className="projects__info" style={{ marginBottom: "1.8em" }}>
-            Here you are gonnaa find some of personal projects and recent works
-            I have been working. To view more projects go to my
+            Here you are gonna find some of my personal projects and recent
+            works I have been working. To view more projects go to my
             {` `}
             <a
               target="_blank"
