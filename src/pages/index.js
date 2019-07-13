@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const items = [
   "Hi I'm Luis.",
-  "Frontend (mostly) developer, specialize in fast prototypes",
+  "Frontend (mostly) developer, specialized in fast prototypes",
   "for the web.",
 ]
 const config = { mass: 5, tension: 1000, friction: 250 }
