@@ -30,5 +30,10 @@ export default () => {
       theme,
       toggleTheme,
     }
+  } else {
+    return {
+      theme: "light",
+      toggleTheme: () => {},
+    }
   }
 }
