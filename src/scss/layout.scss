@@ -61,6 +61,7 @@ html {
   background: $bg-black;
   color: $secondary-color;
   transition: 0.3s all;
+  height: 100vh;
   a {
     color: $secondary-color;
     text-decoration: none;
@@ -80,6 +81,7 @@ html {
   background: $bg-white;
   color: $primary-color;
   transition: 0.3s all;
+  height: 100vh;
   a {
     color: $primary-color;
     text-decoration: none;

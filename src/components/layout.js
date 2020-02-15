@@ -63,17 +63,6 @@ const Layout = ({ children }) => {
             >
               <span>Luis Hernández</span>
             </a>
-            {` `}
-            using
-            {` `}
-            <a
-              id="gradient"
-              target="_blank"
-              href="https://www.gatsbyjs.org"
-              rel="noopener noreferrer"
-            >
-              Gatsby.
-            </a>
           </div>
         </div>
       </footer>
