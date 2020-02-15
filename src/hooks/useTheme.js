@@ -17,13 +17,11 @@ export default () => {
     }
 
     useEffect(() => {
-      const localTheme = window.localStorage.getItem("theme")
-      if (localTheme) {
-        localTheme === "light"
-          ? (document.documentElement.style.backgroundColor = "#fff")
-          : (document.documentElement.style.backgroundColor = "#000")
-        setTheme(localTheme)
-      }
+      const localTheme = window.localStorage.getItem("theme") || 'light'
+      localTheme === "light"
+        ? (document.documentElement.style.backgroundColor = "#fff")
+        : (document.documentElement.style.backgroundColor = "#000")
+      setTheme(localTheme)
     }, [theme])
 
     return {
