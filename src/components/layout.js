@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -24,6 +24,15 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const localTheme = window.localStorage.getItem("theme");
+      const color = localTheme === 'dark' ? "#000" : "#fff"
+      document.documentElement.style.backgroundColor = color
+    }
+  });
+  
   const { theme, toggleTheme } = useTheme()
   const props = useSpring({
     to: [{ opacity: 1 }],
