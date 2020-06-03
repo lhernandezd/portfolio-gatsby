@@ -19,10 +19,16 @@ html {
 
 /* Layout */
 .container {
-  max-width: 960px;
+  max-width: 70rem;
   padding-top: 1.0875rem;
   padding-bottom: 1.0875rem;
   margin: 0 auto;
+  &--extended {
+    max-width: 80rem;
+    padding-top: 1.0875rem;
+    padding-bottom: 1.0875rem;
+    margin: 0 auto;
+  }
 }
 
 .display-none {
@@ -52,6 +58,9 @@ html {
   .col-6 {
     grid-column: 6 span;
   }
+  .col-4 {
+    grid-column: 4 span;
+  }
   .col-3 {
     grid-column: 3 span;
   }
@@ -75,6 +84,14 @@ html {
   #drawer {
     background-color: $bg-black-2;
   }
+  .home__skills {
+    .skills__skill {
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
 }
 
 .app.light {
@@ -95,11 +112,20 @@ html {
   #drawer {
     background-color: $bg-white-2;
   }
+  .home__skills {
+    .skills__skill {
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
 }
 
 /* Header */
 .header {
   margin-bottom: 1.45rem;
+  border-bottom: 1px solid #eaecef;
   .header__content {
     padding: 1.875em 1.0875rem;
     display: flex;

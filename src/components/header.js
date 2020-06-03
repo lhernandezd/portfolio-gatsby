@@ -16,7 +16,7 @@ const Header = ({ siteTitle, ...props }) => {
   })
   return (
     <header className="header">
-      <nav className="container header__content">
+      <nav className="container--extended header__content">
         <h1 style={{ margin: 0, fontSize: 20 }}>
           <Link to="/">{siteTitle}</Link>
         </h1>
@@ -30,7 +30,7 @@ const Header = ({ siteTitle, ...props }) => {
           <Link className="link" to="/contact/">
             Contact
           </Link>
-          <span className="link link-last icon" onClick={props.toggle}>
+          <span className="link link-last icon" onClick={props.toggle} style={{ display: 'none' }}>
             {props.theme === "light" ? <FaRegMoon /> : <FaRegSun />}
           </span>
         </div>

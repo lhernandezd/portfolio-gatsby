@@ -3,7 +3,11 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Luis Hernandez <ldhdv95@gmail.com>",
+  "engines": {
+    "node": "14.3",
+    "npm": "6.14.5"
+  },
   "dependencies": {
     "gatsby": "^2.19.17",
     "gatsby-image": "^2.2.41",
