@@ -3,8 +3,8 @@
 @import "responsive";
 @import "home";
 @import "about";
-@import "contact";
-@import "projects";
+@import "work";
+@import "education";
 
 $font-stack: "Source Sans Pro", sans-serif;
 
@@ -45,6 +45,13 @@ html {
 .icon {
   vertical-align: middle;
   cursor: pointer;
+}
+
+.link__icon {
+  color: #aaa;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 .grid {
@@ -127,10 +134,22 @@ html {
   margin-bottom: 1.45rem;
   border-bottom: 1px solid #eaecef;
   .header__content {
-    padding: 1.875em 1.0875rem;
+    padding: 1rem 1.0875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .content__title {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 1.3rem;
+        margin: 0;
+        margin-left: 10px;
+        @include sm {
+          margin-left: 0px;
+        }
+      }
+    }
     .content__links {
       font-size: 16px;
       display: none;
@@ -154,12 +173,14 @@ html {
     }
   }
   .header__drawer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    padding: 0;
-    font-weight: 300;
     display: block;
+    font-weight: 300;
+    height: 92vh;
+    position: absolute;
+    top: 61px;
+    padding: .5rem 0;
+    z-index: 2;
+    border-right: 1px solid #eaecef;
     @include sm {
       display: none;
     }
@@ -167,11 +188,16 @@ html {
       display: flex;
       flex-direction: column;
       height: 100%;
-      font-size: 25px;
-      align-items: center;
-      width: 100%;
+      width: 260px;
       .link {
-        padding: 50px 0;
+        padding: 15px 0;
+        display: block;
+        line-height: 1.25rem;
+        font-size: 1.1em;
+        padding: .89rem 0 .5rem 1.5rem;
+        &:hover {
+          color: $exception-color;
+        }
       }
       .link.link-last {
         display: flex;
@@ -196,7 +222,7 @@ html {
   display: block;
   height: 1px;
   bottom: 0.4px;
-  background-color: $underline-color;
+  background-color: $exception-color;
   transition-property: width;
   transition-duration: 0.4s;
 }

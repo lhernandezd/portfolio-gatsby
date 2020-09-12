@@ -1,25 +1,20 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useEffect} from "react"
 
 import { Link } from "gatsby"
-import { FaRegMoon } from "react-icons/fa"
 
 const Drawer = props => {
+  useEffect(() => {
+    props.setOpen(false)
+  }, []);
+
   return (
     <Fragment>
       <div className="drawer__links">
-        <Link className="link" to="/about/">
-          About
-        </Link>
-        <Link className="link" to="/projects/">
-          Projects
-        </Link>
-        <Link className="link" to="/contact/">
-          Contact
-        </Link>
-        <span className="link link-last icon" onClick={props.toggle}>
-          Change theme
-          <FaRegMoon />
-        </span>
+        {props.pages.map(page =>
+          <Link className="link" to={`/${page}/`}>
+            {`${page[0].toUpperCase()}${page.slice(1)}`}
+          </Link>
+        )}
       </div>
     </Fragment>
   )

@@ -1,21 +1,55 @@
 .about__container {
   @extend %section-container;
   height: 450px;
-  .container__info {
-    header {
-      margin-bottom: 1.8em;
-      h2 {
-        margin: 0;
-        font-weight: 300;
-      }
-      &::after {
-        @extend %low-dash;
-        width: 60px;
-      }
+  header {
+    margin-bottom: 1.8em;
+    h2 {
+      margin: 0;
+      font-weight: 400;
+      font-size: 2.2rem;
     }
-    p {
-      font-weight: 300;
-      margin: 0 0 1.8em;
+  }
+  p {
+    font-weight: 300;
+    margin: 0 0 1.8em;
+  }
+
+  .element__image {
+    max-width: 400px;
+    display: none;
+    @include md {
+      display: block;
+    }
+  }
+  
+  .element__list {
+    padding: 0px;
+    list-style: none;
+    .list__item {
+      text-align: center;
+      margin: 10px;
+      a {
+        font-size: 16px;
+        font-weight: 300;
+        transition: color 0.3s;
+        display: flex;
+        align-items: center;
+        color: $exception-color;
+        &:hover {
+          color: $exception-color-2;
+          text-decoration: underline;
+        }
+        svg {
+          display: block;
+          margin-right: 10px;
+        }
+        .link-circular {
+          font-size: 20px;
+        }
+        .link-square {
+          font-size: 17px;
+        }
+      }
     }
   }
 }

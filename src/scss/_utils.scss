@@ -3,8 +3,9 @@ $secondary-color: #fff;
 $bg-black: #000;
 $bg-black-2: rgba(0, 0, 0, 0.9);
 $bg-white: #fff;
-$bg-white-2: rgba(255, 255, 255, 0.9);
-$underline-color: #db0768;
+$bg-white-2: rgba(255, 255, 255, 1);
+$exception-color: #ED8074;
+$exception-color-2: #c96d63;
 
 @mixin gradient-text($gradient, $bg: "light") {
   @supports (mix-blend-mode: lighten) {

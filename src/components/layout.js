@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const { theme, toggleTheme } = useTheme()
+  const { theme } = useTheme()
   const props = useSpring({
     to: [{ opacity: 1 }],
     from: { opacity: 0 },
@@ -35,7 +35,6 @@ const Layout = ({ children }) => {
     <div className={`app ${theme}`}>
       <Header
         siteTitle={data.site.siteMetadata.title}
-        toggle={toggleTheme}
         theme={theme}
       />
       <div
