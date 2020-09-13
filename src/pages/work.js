@@ -34,7 +34,7 @@ const Projects = () => {
                 title: "EKA-TMS App",
                 link: "https://go-eka.com/"
               }}
-              description="Working as Software Engineer for the clients projects, also as the propetary projects of the company."
+              description="Working as a Software Engineer for client projects, as well as company-owned projects."
               list={{
                 title: "Current Project",
                 items: [

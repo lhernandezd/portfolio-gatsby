@@ -20,7 +20,7 @@ const Projects = () => {
               dateString="Aug 2019"
               description="Fullstack Bootcamp (JavaScript Orientated)."
               education={{
-                title: "Make it Real Bootcamp",
+                title: "Make it Real",
                 link: "https://makeitreal.camp/full-stack-online"
               }}
             />
@@ -30,7 +30,7 @@ const Projects = () => {
               dateString="Aug 2018"
               description="Fullstack Bootcamp (Ruby Orientated)."
               education={{
-                title: "Make it Real Bootcamp",
+                title: "Make it Real",
                 link: "https://makeitreal.camp/full-stack-online"
               }}
             />
