@@ -2,7 +2,7 @@ import React from "react"
 import CustomLink from "../components/customLink";
 
 const Card = props => {
-  const { containerClass, title, dateString, education, description, list} = props;
+  const { containerClass, title, dateString, education, description } = props;
   return (
     <div className={`${containerClass} cards__card`}>
       <div className="card__info">

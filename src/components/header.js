@@ -8,10 +8,18 @@ import { FaRegMoon, FaRegSun } from "react-icons/fa"
 import { IoIosMenu, IoIosClose } from "react-icons/io"
 
 const Header = ({ siteTitle, ...props }) => {
+  let defaultHeight
+  let defaultWidth
+
+  if (typeof window !== `undefined`) {
+    defaultHeight = window.innerHeight
+    defaultWidth = window.innerWidth
+  }
+
   const [open, setOpen] = useState(false)
   const [dimensions, setDimensions] = useState({
-    height: 0,
-    width: 0
+    height: defaultHeight,
+    width: defaultWidth
   })
   const { o, t,} = useSpring({
     config: { 
