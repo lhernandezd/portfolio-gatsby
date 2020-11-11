@@ -47,25 +47,6 @@ const Projects = () => {
             />
             <Card
               containerClass="col-6"
-              title="Ela Sustentable"
-              dateString="December 2018 – July 2019"
-              project={{
-                title: "ELA Sustentable",
-                link: "https://www.elasustentable.com/"
-              }}
-              description="Working as Fullstack developing a web application for industrial engineering company."
-              list={{
-                title: "Last Project",
-                items: [
-                  "Used technologies including Firebase, React, HTML, and CSS",
-                  "Created web applications using the latest ECMAScript features",
-                  "In charge of maintaining the firebase (database and cloud functions)",
-                  "Web scraping with Python to process customer support emails",
-                ]
-              }}
-            />
-            <Card
-              containerClass="col-6"
               title="SimpleLegal"
               dateString="July 2019 – September 2019"
               description="Working as Fullstack developing a desktop legal process web application."
@@ -93,6 +74,25 @@ const Projects = () => {
                   "Used technologies including JavaScript, Ruby on Rails, HTML, and CSS",
                   "Participated in improving the UI/UX behavior of the webpage",
                   "Responsible for maintaining the Color Beats webpage",
+                ]
+              }}
+            />
+            <Card
+              containerClass="col-6"
+              title="Ela Sustentable"
+              dateString="December 2018 – July 2019"
+              project={{
+                title: "ELA Sustentable",
+                link: "https://www.elasustentable.com/"
+              }}
+              description="Working as Fullstack developing a web application for industrial engineering company."
+              list={{
+                title: "Last Project",
+                items: [
+                  "Used technologies including Firebase, React, HTML, and CSS",
+                  "Created web applications using the latest ECMAScript features",
+                  "In charge of maintaining the firebase (database and cloud functions)",
+                  "Web scraping with Python to process customer support emails",
                 ]
               }}
             />
