@@ -91,6 +91,12 @@ const IndexPage = () => {
           <div className="skills__skill size-2">
             <span>Firebase</span>
           </div>
+          <div className="skills__skill size-3">
+            <span>BrightScript</span>
+          </div>
+          <div className="skills__skill">
+            <span>SceneGraph</span>
+          </div>
         </div>
       </section>
     </Layout>
