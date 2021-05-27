@@ -3,18 +3,18 @@ import { AiFillTool } from "react-icons/ai"
 import CustomLink from "../components/customLink";
 
 const Card = props => {
-  const { containerClass, title, dateString, project, description, list} = props;
+  const { containerClass, title, dateString, company, description, list} = props;
   return (
     <div className={`${containerClass} cards__card`}>
       <div className="card__info">
         <h3>{title}</h3>
         <p className="info__date">{dateString}</p>
         <p className="info__link">
-          {project ?
+          {company ?
             <CustomLink
               withLinkIcon
-              link={project.link}
-              title={project.title}
+              link={company.link}
+              title={company.name}
               linkAttrs={{
                 target: "_blank"
               }}

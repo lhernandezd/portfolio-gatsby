@@ -26,22 +26,56 @@ const Projects = () => {
             </a>
           </div>
           <div className="grid work__cards">
-            <Card
+          <Card
               containerClass="col-6"
-              title="FullStack Labs"
-              dateString="September 2019 - Present"
-              project={{
-                title: "EKA-TMS App",
-                link: "https://go-eka.com/"
+              title="Zemoga"
+              dateString="January 2021 - Present"
+              company={{
+                name: "Zemoga",
+                link: "https://zemoga.com/"
               }}
               description="Working as a Software Engineer for client projects, as well as company-owned projects."
               list={{
                 title: "Current Project",
                 items: [
-                  "Used technologies including NodeJS, React, HTML, and CSS",
-                  "Web app for transportation and logistics industry (EKA)",
-                  "Provide support to EKA QA team",
-                  "Design and Implement new features for EKA website app"
+                  "Usage of Roku Pay and Deep Linking",
+                  "Design and Implement new features",
+                  "Used technologies including Node JS, BrightScript and SceneGraph"
+                ]
+              }}
+            />
+            <Card
+              containerClass="col-6"
+              title="FullStack Labs"
+              dateString="September 2019 - January 2021"
+              company={{
+                name: "FullStack Labs",
+                link: "https://www.fullstacklabs.co/"
+              }}
+              description="Working as a Software Engineer for client projects, as well as company-owned projects."
+              list={{
+                title: "Current Project",
+                items: [
+                  "Usage of S3 and Lambda functions",
+                  "Design and Implement new features of the website app",
+                  "Used technologies including React, Vanilla JS, Express JS, Nest JS, PostgreSQL, Jest JS, HTML, and CSS",
+                ]
+              }}
+            />
+            <Card
+              containerClass="col-6"
+              title="Color Beats"
+              dateString="July 2019 – September 2019"
+              company={{
+                name: "Color Beats",
+                link: "https://colorbeats.co/"
+              }}
+              description="Working as Web developer for an eCommerce webpage using Shopify."
+              list={{
+                title: "Last Project",
+                items: [
+                  "Participated in improving the UI/UX behavior and maintaining the webpage",
+                  "Used technologies including JavaScript, Ruby on Rails, HTML, and CSS",
                 ]
               }}
             />
@@ -53,27 +87,9 @@ const Projects = () => {
               list={{
                 title: "Last Project",
                 items: [
-                  "Used technologies including Firebase, React, HTML, and CSS",
-                  "Responsible for maintaining the SimpleLegal application",
-                  "Participated in improving the UI/UX behavior of the application"
-                ]
-              }}
-            />
-            <Card
-              containerClass="col-6"
-              title="Color Beats"
-              dateString="July 2019 – September 2019"
-              project={{
-                title: "Color Beats",
-                link: "https://colorbeats.co/"
-              }}
-              description="Working as Web developer for an eCommerce webpage using Shopify."
-              list={{
-                title: "Last Project",
-                items: [
-                  "Used technologies including JavaScript, Ruby on Rails, HTML, and CSS",
-                  "Participated in improving the UI/UX behavior of the webpage",
-                  "Responsible for maintaining the Color Beats webpage",
+                  "Developed desktop legal process web application to help modernize the legal operations industry",
+                  "Participated in improving the UI/UX behavior of the application",
+                  "Used technologies including Firebase, Cloud Functions, React, HTML, and CSS"
                 ]
               }}
             />
@@ -81,18 +97,17 @@ const Projects = () => {
               containerClass="col-6"
               title="Ela Sustentable"
               dateString="December 2018 – July 2019"
-              project={{
-                title: "ELA Sustentable",
+              company={{
+                name: "ELA Sustentable",
                 link: "https://www.elasustentable.com/"
               }}
               description="Working as Fullstack developing a web application for industrial engineering company."
               list={{
                 title: "Last Project",
                 items: [
-                  "Used technologies including Firebase, React, HTML, and CSS",
+                  "Developed company management web application for industrial engineering companies",
                   "Created web applications using the latest ECMAScript features",
-                  "In charge of maintaining the firebase (database and cloud functions)",
-                  "Web scraping with Python to process customer support emails",
+                  "Used technologies including Firebase, Cloud Functions, Python, React, HTML, and CSS",
                 ]
               }}
             />
