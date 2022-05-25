@@ -44,7 +44,7 @@ const Header = ({ siteTitle, ...props }) => {
     }
   });
 
-  const pages= ["about", "work", "education"];
+  const pages= ["about", "work", "education", "teaching"];
 
   return (
     <header className="header">

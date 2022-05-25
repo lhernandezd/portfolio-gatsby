@@ -84,7 +84,7 @@ const About = () => {
                     <CustomLink
                       withLinkIcon
                       icon={TiDocumentText}
-                      link="https://drive.google.com/file/d/1blHZUVnihaq6DcJGtdbqhrWMK_1d46PE/view?usp=sharing"
+                      link="https://drive.google.com/file/d/1Z0kFOvmoxLyrmkYqdibCG0Rtblmx5VFj/view?usp=sharing"
                       title="Link to my resume"
                       shape="square"
                       linkAttrs={{

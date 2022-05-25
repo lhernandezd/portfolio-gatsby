@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Card from "../components/workCard";
 import SEO from "../components/seo"
 
-const Projects = () => {
+const Work = () => {
   return (
     <Layout>
       <SEO title="Working" />
@@ -118,4 +118,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Work
