@@ -39,9 +39,11 @@ const About = () => {
                 acknowledge that this is my path.
               </p>
               <p>
-                Now I am an electronic engineer graduate looking to break into the
-                world of Web Development and who is constantly looking for ways to
-                develop himself personally and professionally.
+                Now I am an Software Developer with 4 years of experience developing web applications and streaming channels (Roku) using Javascript, BrightScript, and REST services.
+                Focused on working from the client-side, interpreting and adapting languages to create and maintain the final experience for the client.
+                Strong understanding of component design patterns and data store for any UI layer using redux.
+                I consider myself an enthusiast of technology and the challenges to continue growing professionally.
+                I aim to create and design solutions with a team with clear objectives. An amateur photographer and animal lover.
               </p>
             </div>
             <div className="info__grid grid">
@@ -71,8 +73,8 @@ const About = () => {
                   </li>
                   <li className="list__item">
                     <CustomLink
-                      link="https://www.linkedin.com/in/lhernandezd95/"
-                      title="lhernandezd95"
+                      link="https://www.linkedin.com/in/luis-david-hernandez/"
+                      title="Luis Hernandez"
                       icon={FaLinkedinIn}
                       shape="square"
                       linkAttrs={{
