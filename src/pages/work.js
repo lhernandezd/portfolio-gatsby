@@ -34,13 +34,13 @@ const Work = () => {
                 name: "Zemoga",
                 link: "https://zemoga.com/"
               }}
-              description="Working as a Software Engineer for client projects, as well as company-owned projects."
+              description="I work as Frontend Developer / Roku for client projects as well as for in-house projects."
               list={{
                 title: "Current Project",
                 items: [
-                  "Usage of Roku Pay and Deep Linking",
-                  "Design and Implement new features",
-                  "Used technologies including Node JS, BrightScript and SceneGraph"
+                  "Implement deep linking and instant resume logic to enrich the user experience on the Roku channel.",
+                  "Update the NodeJS server used for a custom build, to optimize the build time for the Roku channel.",
+                  "Write and update the documentation for the channel maintenance."
                 ]
               }}
             />
@@ -52,13 +52,13 @@ const Work = () => {
                 name: "FullStack Labs",
                 link: "https://www.fullstacklabs.co/"
               }}
-              description="Working as a Software Engineer for client projects, as well as company-owned projects."
+              description="Worked as a Software Engineer for client projects, as well as company-owned projects."
               list={{
                 title: "Current Project",
                 items: [
-                  "Usage of S3 and Lambda functions",
-                  "Design and Implement new features of the website app",
-                  "Used technologies including React, Vanilla JS, Express JS, Nest JS, PostgreSQL, Jest JS, HTML, and CSS",
+                  "Implemented Lambda functions to greatly reduce the number of requests made by the customer (data processing).",
+                  "Added logic in charge of payment and transport chains, with real-time tracking, in order to enrich the user experience.",
+                  "Upgrade the webpack version used in the project in order to reduce at least 20% of the build time."
                 ]
               }}
             />
@@ -70,7 +70,7 @@ const Work = () => {
                 name: "Color Beats",
                 link: "https://colorbeats.co/"
               }}
-              description="Working as Web developer for an eCommerce webpage using Shopify."
+              description="Worked as Web developer for an eCommerce webpage using Shopify."
               list={{
                 title: "Last Project",
                 items: [
@@ -83,7 +83,11 @@ const Work = () => {
               containerClass="col-6"
               title="SimpleLegal"
               dateString="July 2019 – September 2019"
-              description="Working as Fullstack developing a desktop legal process web application."
+              company={{
+                name: "SimpleLegal",
+                link: "https://simplelegalapp.co"
+              }}
+              description="Worked as Fullstack developing a desktop legal process application."
               list={{
                 title: "Last Project",
                 items: [
@@ -101,7 +105,7 @@ const Work = () => {
                 name: "ELA Sustentable",
                 link: "https://www.elasustentable.com/"
               }}
-              description="Working as Fullstack developing a web application for industrial engineering company."
+              description="Worked as Fullstack developing a web application for industrial engineering company."
               list={{
                 title: "Last Project",
                 items: [
