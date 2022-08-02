@@ -1,13 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Card from "../components/educationCard";
-import SEO from "../components/seo"
+import Card from "../components/educationCard"
+import { SEO as Seo } from "../components/seo"
 
 const Education = () => {
   return (
     <Layout>
-      <SEO title="Education" />
+      <Seo title="Education" />
       <section className="education">
         <div className="education__container">
           <header>
@@ -21,7 +21,7 @@ const Education = () => {
               description="Fullstack Bootcamp (JavaScript Orientated)."
               education={{
                 title: "Make it Real",
-                link: "https://makeitreal.camp/full-stack-online"
+                link: "https://makeitreal.camp/full-stack-online",
               }}
             />
             <Card
@@ -31,7 +31,7 @@ const Education = () => {
               description="Fullstack Bootcamp (Ruby Orientated)."
               education={{
                 title: "Make it Real",
-                link: "https://makeitreal.camp/full-stack-online"
+                link: "https://makeitreal.camp/full-stack-online",
               }}
             />
             <Card
@@ -41,7 +41,7 @@ const Education = () => {
               description="BS in Electrical Engineering at Universidad del Norte."
               education={{
                 title: "Universidad Del Norte",
-                link: "https://www.uninorte.edu.co/web/ingenieria-electronica"
+                link: "https://www.uninorte.edu.co/web/ingenieria-electronica",
               }}
             />
           </div>

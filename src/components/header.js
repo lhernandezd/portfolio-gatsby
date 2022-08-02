@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState , useEffect} from "react"
+import React, { useState, useEffect } from "react"
 
 import Drawer from "./drawer"
 import { useSpring, animated } from "react-spring"
@@ -19,13 +19,13 @@ const Header = ({ siteTitle, ...props }) => {
   const [open, setOpen] = useState(false)
   const [dimensions, setDimensions] = useState({
     height: defaultHeight,
-    width: defaultWidth
+    width: defaultWidth,
   })
-  const { o, t,} = useSpring({
-    config: { 
+  const { o, t } = useSpring({
+    config: {
       mass: 1,
       tension: 270,
-      friction: 30
+      friction: 30,
     },
     o: open ? 1 : 0,
     t: open ? 0 : 100,
@@ -34,17 +34,17 @@ const Header = ({ siteTitle, ...props }) => {
   useEffect(() => {
     function handleResize() {
       setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth
+        height: window?.innerHeight,
+        width: window?.innerWidth,
       })
     }
-    window.addEventListener('resize', handleResize)
+    window?.addEventListener("resize", handleResize)
     return () => {
-      window.removeEventListener('resize', handleResize)
+      window?.removeEventListener("resize", handleResize)
     }
-  });
+  })
 
-  const pages= ["about", "work", "education", "teaching"];
+  const pages = ["about", "work", "education", "teaching"]
 
   return (
     <header className="header">
@@ -58,30 +58,34 @@ const Header = ({ siteTitle, ...props }) => {
           </h1>
         </div>
         <div className="content__links">
-          {pages.map(page =>
-            <Link className="link" to={`/${page}/`}>
+          {pages.map((page, index) => (
+            <Link key={`${page}_${index}`} className="link" to={`/${page}/`}>
               {`${page[0].toUpperCase()}${page.slice(1)}`}
             </Link>
-          )}
-          <span className="link link-last icon" onClick={props.toggle} style={{ display: 'none' }}>
+          ))}
+          <span
+            className="link link-last icon"
+            onClick={props.toggle}
+            style={{ display: "none" }}
+          >
             {props.theme === "light" ? <FaRegMoon /> : <FaRegSun />}
           </span>
         </div>
       </nav>
-      {dimensions.width <= 576 &&
+      {dimensions.width <= 576 && (
         <>
           <animated.aside
             id="drawer"
             className="header__drawer"
             style={{
               opacity: o,
-              transform: t.interpolate(t => `translateX(${-t}%)`),
+              transform: t.interpolate((t) => `translateX(${-t}%)`),
             }}
           >
-            <Drawer toggle={props.toggle} setOpen={setOpen} pages={pages}/>
+            <Drawer toggle={props.toggle} setOpen={setOpen} pages={pages} />
           </animated.aside>
         </>
-      }
+      )}
     </header>
   )
 }

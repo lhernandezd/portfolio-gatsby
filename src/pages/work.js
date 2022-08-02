@@ -1,20 +1,21 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Card from "../components/workCard";
-import SEO from "../components/seo"
+import Card from "../components/workCard"
+import { SEO as Seo } from "../components/seo"
 
 const Work = () => {
   return (
     <Layout>
-      <SEO title="Working" />
+      <Seo title="Working" />
       <section className="work">
         <div className="work__container">
           <header>
             <h2>My Work</h2>
           </header>
           <div className="work__info" style={{ marginBottom: "1.8em" }}>
-            Here you are gonna find some of the work I have been making throught the years. To view more about my personal projects go to my
+            Here you are gonna find some of the work I have been making throught
+            the years. To view more about my personal projects go to my
             {` `}
             <a
               target="_blank"
@@ -26,13 +27,13 @@ const Work = () => {
             </a>
           </div>
           <div className="grid work__cards">
-          <Card
+            <Card
               containerClass="col-6"
               title="Zemoga"
               dateString="January 2021 - Present"
               company={{
                 name: "Zemoga",
-                link: "https://zemoga.com/"
+                link: "https://zemoga.com/",
               }}
               description="I work as Frontend Developer / Roku for client projects as well as for in-house projects."
               list={{
@@ -40,8 +41,8 @@ const Work = () => {
                 items: [
                   "Implement deep linking and instant resume logic to enrich the user experience on the Roku channel.",
                   "Update the NodeJS server used for a custom build, to optimize the build time for the Roku channel.",
-                  "Write and update the documentation for the channel maintenance."
-                ]
+                  "Write and update the documentation for the channel maintenance.",
+                ],
               }}
             />
             <Card
@@ -50,7 +51,7 @@ const Work = () => {
               dateString="September 2019 - January 2021"
               company={{
                 name: "FullStack Labs",
-                link: "https://www.fullstacklabs.co/"
+                link: "https://www.fullstacklabs.co/",
               }}
               description="Worked as a Software Engineer for client projects, as well as company-owned projects."
               list={{
@@ -58,8 +59,8 @@ const Work = () => {
                 items: [
                   "Implemented Lambda functions to greatly reduce the number of requests made by the customer (data processing).",
                   "Added logic in charge of payment and transport chains, with real-time tracking, in order to enrich the user experience.",
-                  "Upgrade the webpack version used in the project in order to reduce at least 20% of the build time."
-                ]
+                  "Upgrade the webpack version used in the project in order to reduce at least 20% of the build time.",
+                ],
               }}
             />
             <Card
@@ -68,7 +69,7 @@ const Work = () => {
               dateString="July 2019 – September 2019"
               company={{
                 name: "Color Beats",
-                link: "https://colorbeats.co/"
+                link: "https://colorbeats.co/",
               }}
               description="Worked as Web developer for an eCommerce webpage using Shopify."
               list={{
@@ -76,7 +77,7 @@ const Work = () => {
                 items: [
                   "Participated in improving the UI/UX behavior and maintaining the webpage",
                   "Used technologies including JavaScript, Ruby on Rails, HTML, and CSS",
-                ]
+                ],
               }}
             />
             <Card
@@ -85,7 +86,7 @@ const Work = () => {
               dateString="July 2019 – September 2019"
               company={{
                 name: "SimpleLegal",
-                link: "https://simplelegalapp.co"
+                link: "https://simplelegalapp.co",
               }}
               description="Worked as Fullstack developing a desktop legal process application."
               list={{
@@ -93,8 +94,8 @@ const Work = () => {
                 items: [
                   "Developed desktop legal process web application to help modernize the legal operations industry",
                   "Participated in improving the UI/UX behavior of the application",
-                  "Used technologies including Firebase, Cloud Functions, React, HTML, and CSS"
-                ]
+                  "Used technologies including Firebase, Cloud Functions, React, HTML, and CSS",
+                ],
               }}
             />
             <Card
@@ -103,7 +104,7 @@ const Work = () => {
               dateString="December 2018 – July 2019"
               company={{
                 name: "ELA Sustentable",
-                link: "https://www.elasustentable.com/"
+                link: "https://www.elasustentable.com/",
               }}
               description="Worked as Fullstack developing a web application for industrial engineering company."
               list={{
@@ -112,7 +113,7 @@ const Work = () => {
                   "Developed company management web application for industrial engineering companies",
                   "Created web applications using the latest ECMAScript features",
                   "Used technologies including Firebase, Cloud Functions, Python, React, HTML, and CSS",
-                ]
+                ],
               }}
             />
           </div>

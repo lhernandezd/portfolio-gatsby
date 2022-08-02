@@ -30,13 +30,10 @@ const Layout = ({ children }) => {
     to: [{ opacity: 1 }],
     from: { opacity: 0 },
   })
-  
+
   return (
     <div className={`app ${theme}`}>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        theme={theme}
-      />
+      <Header siteTitle={data.site.siteMetadata.title} theme={theme} />
       <div
         id="content"
         className="container"

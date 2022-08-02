@@ -1,6 +1,5 @@
 .about__container {
   @extend %section-container;
-  height: 450px;
   header {
     margin-bottom: 1.8em;
     h2 {
@@ -21,7 +20,7 @@
       display: block;
     }
   }
-  
+
   .element__list {
     padding: 0px;
     list-style: none;

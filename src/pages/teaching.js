@@ -1,13 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Card from "../components/workCard";
-import SEO from "../components/seo"
+import Card from "../components/workCard"
+import { SEO as Seo } from "../components/seo"
 
 const Teaching = () => {
   return (
     <Layout>
-      <SEO title="Teaching" />
+      <Seo title="Teaching" />
       <section className="work">
         <div className="work__container">
           <header>
@@ -20,14 +20,14 @@ const Teaching = () => {
               dateString="November 2021 - May 2022"
               company={{
                 name: "Make it real",
-                link: "https://makeitreal.camp/"
+                link: "https://makeitreal.camp/",
               }}
               description="Bootcamp from Make it Real as mentor for the Full Stack Web Developer program"
               list={{
                 title: "Courses",
                 items: [
-                  "Full Stack Web Developer (Command line tools, git, Github, JavaScript, Node JS, jQuery and React)"
-                ]
+                  "Full Stack Web Developer (Command line tools, git, Github, JavaScript, Node JS, jQuery and React)",
+                ],
               }}
             />
           </div>

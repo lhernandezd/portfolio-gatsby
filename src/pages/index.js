@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useTrail, animated } from "react-spring"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { SEO as Seo } from "../components/seo"
 
 const items = [
   "Hi I'm Luis.",
@@ -22,7 +22,7 @@ const IndexPage = () => {
   })
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <section className="home">
         <div className="home__container">
           {trail.map(({ x, height, ...rest }, index) => (
@@ -32,7 +32,7 @@ const IndexPage = () => {
               className={index === 0 ? "container__text" : "container__subtext"}
               style={{
                 ...rest,
-                transform: x.interpolate(x => `translate3d(0,${x}px,0)`),
+                transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
               }}
             >
               <animated.div style={height}>{items[index]}</animated.div>

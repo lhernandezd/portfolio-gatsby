@@ -1,29 +1,27 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { IoMdMail } from "react-icons/io"
 import { TiDocumentText } from "react-icons/ti"
-import CustomLink from "../components/customLink";
+import CustomLink from "../components/customLink"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { SEO as Seo } from "../components/seo"
 
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
       profileImage: file(relativePath: { eq: "min-me.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: CONSTRAINED, width: 1000)
         }
       }
     }
   `)
   return (
     <Layout>
-      <SEO title="About" />
+      <Seo title="About" />
       <section className="about">
         <div className="about__container">
           <header>
@@ -32,18 +30,23 @@ const About = () => {
           <div className="container__info">
             <div className="info__description">
               <p>
-                My love for technology started since I was a child.
-                I studied electronics engineering at Universidad del Norte
-                in Barranquilla, Colombia. I also finished a Bootcamp on Web
+                My love for technology started since I was a child. I studied
+                electronics engineering at Universidad del Norte in
+                Barranquilla, Colombia. I also finished a Bootcamp on Web
                 Development made by Make It Real. The bootcamp helped me to
                 acknowledge that this is my path.
               </p>
               <p>
-                Now I am an Software Developer with 4 years of experience developing web applications and streaming channels (Roku) using Javascript, BrightScript, and REST services.
-                Focused on working from the client-side, interpreting and adapting languages to create and maintain the final experience for the client.
-                Strong understanding of component design patterns and data store for any UI layer using redux.
-                I consider myself an enthusiast of technology and the challenges to continue growing professionally.
-                I aim to create and design solutions with a team with clear objectives. An amateur photographer and animal lover.
+                Now I am an Software Developer with 4 years of experience
+                developing web applications and streaming channels (Roku) using
+                Javascript, BrightScript, and REST services. Focused on working
+                from the client-side, interpreting and adapting languages to
+                create and maintain the final experience for the client. Strong
+                understanding of component design patterns and data store for
+                any UI layer using redux. I consider myself an enthusiast of
+                technology and the challenges to continue growing
+                professionally. I aim to create and design solutions with a team
+                with clear objectives. An amateur photographer and animal lover.
               </p>
             </div>
             <div className="info__grid grid">
@@ -59,7 +62,7 @@ const About = () => {
                       icon={FaGithub}
                       shape="circular"
                       linkAttrs={{
-                        target: "_blank"
+                        target: "_blank",
                       }}
                     />
                   </li>
@@ -78,7 +81,7 @@ const About = () => {
                       icon={FaLinkedinIn}
                       shape="square"
                       linkAttrs={{
-                        target: "_blank"
+                        target: "_blank",
                       }}
                     />
                   </li>
@@ -90,7 +93,7 @@ const About = () => {
                       title="Link to my resume"
                       shape="square"
                       linkAttrs={{
-                        target: "_blank"
+                        target: "_blank",
                       }}
                     />
                   </li>
@@ -102,8 +105,8 @@ const About = () => {
                   maxWidth: `500px`,
                 }}
               >
-                <Img
-                  fluid={data.profileImage.childImageSharp.fluid}
+                <GatsbyImage
+                  image={data.profileImage.childImageSharp.gatsbyImageData}
                   style={{ borderRadius: 2 }}
                   alt="Profile picture"
                   className="element__image"
