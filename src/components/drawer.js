@@ -10,7 +10,7 @@ const Drawer = ({ setOpen, pages }) => {
   return (
     <Fragment>
       <div className="drawer__links">
-        {pages.map(page => (
+        {pages.map((page) => (
           <Link className="link" to={`/${page}/`}>
             {`${page[0].toUpperCase()}${page.slice(1)}`}
           </Link>

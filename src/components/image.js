@@ -7,7 +7,12 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "min-me.jpeg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, width: 300)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            width: 300
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }

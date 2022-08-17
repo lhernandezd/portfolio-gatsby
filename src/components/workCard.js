@@ -2,15 +2,9 @@ import React from "react"
 import { AiFillTool } from "react-icons/ai"
 import CustomLink from "../components/customLink"
 
-const Card = props => {
-  const {
-    containerClass,
-    title,
-    dateString,
-    company,
-    description,
-    list,
-  } = props
+const Card = (props) => {
+  const { containerClass, title, dateString, company, description, list } =
+    props
   return (
     <div className={`${containerClass} cards__card`}>
       <div className="card__info">

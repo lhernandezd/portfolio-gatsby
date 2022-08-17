@@ -1,6 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { IoMdMail } from "react-icons/io"
 import { TiDocumentText } from "react-icons/ti"
@@ -10,15 +9,6 @@ import Layout from "../components/layout"
 import { SEO as Seo } from "../components/seo"
 
 const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      profileImage: file(relativePath: { eq: "min-me.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, width: 1000)
-        }
-      }
-    }
-  `)
   return (
     <Layout>
       <Seo title="About" />
@@ -105,11 +95,13 @@ const About = () => {
                   maxWidth: `500px`,
                 }}
               >
-                <GatsbyImage
-                  image={data.profileImage.childImageSharp.gatsbyImageData}
-                  style={{ borderRadius: 2 }}
+                <StaticImage
+                  src="../images/min-me.jpeg"
                   alt="Profile picture"
                   className="element__image"
+                  placeholder="blurred"
+                  layout="constrained"
+                  width={1000}
                 />
               </div>
             </div>

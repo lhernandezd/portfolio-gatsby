@@ -16,6 +16,7 @@
   .element__image {
     max-width: 400px;
     display: none;
+    border-radius: 2px;
     @include md {
       display: block;
     }
