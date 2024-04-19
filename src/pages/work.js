@@ -29,15 +29,34 @@ const Work = () => {
           <div className="grid work__cards">
             <Card
               containerClass="col-6"
+              title="Critical Mass"
+              dateString="October 2022 - Present"
+              company={{
+                name: "Critical Mass",
+                link: "https://www.criticalmass.com/",
+              }}
+              description="I work as Senior Frontend Developer for client projects as well as for in-house projects."
+              list={{
+                title: "Current Project",
+                items: [
+                  "Create a component library using Lit, to be used in internal applications.",
+                  "Create and migrate applications using React, SCSS and the internal component library, with focus on performance.",
+                  "Lead a developer team and choose the most suitable technologies for internal application projects.",
+                  "Write and update documentation for the web component library and React apps.",
+                ],
+              }}
+            />
+            <Card
+              containerClass="col-6"
               title="Zemoga"
-              dateString="January 2021 - Present"
+              dateString="January 2021 - October 2022"
               company={{
                 name: "Zemoga",
                 link: "https://zemoga.com/",
               }}
               description="I work as Frontend Developer / Roku for client projects as well as for in-house projects."
               list={{
-                title: "Current Project",
+                title: "Last Project",
                 items: [
                   "Implement deep linking and instant resume logic to enrich the user experience on the Roku channel.",
                   "Update the NodeJS server used for a custom build, to optimize the build time for the Roku channel.",
@@ -55,7 +74,7 @@ const Work = () => {
               }}
               description="Worked as a Software Engineer for client projects, as well as company-owned projects."
               list={{
-                title: "Current Project",
+                title: "Last Project",
                 items: [
                   "Implemented Lambda functions to greatly reduce the number of requests made by the customer (data processing).",
                   "Added logic in charge of payment and transport chains, with real-time tracking, in order to enrich the user experience.",

@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
             © {new Date().getFullYear()} - Web app designed and coded by
             {` `}
             <a
-              id="gradient"
+              id="gradient__link"
               target="_blank"
               href="https://github.com/lhernandezd"
               rel="noopener noreferrer"

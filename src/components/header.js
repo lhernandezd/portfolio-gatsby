@@ -79,7 +79,7 @@ const Header = ({ siteTitle, ...props }) => {
             className="header__drawer"
             style={{
               opacity: o,
-              transform: t.interpolate((t) => `translateX(${-t}%)`),
+              transform: t.to((t) => `translateX(${-t}%)`),
             }}
           >
             <Drawer toggle={props.toggle} setOpen={setOpen} pages={pages} />
